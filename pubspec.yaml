@@ -48,6 +48,8 @@ flutter:
 
   assets:
     - assets/logos/
+    - assets/logos/log_logos/
+    - assets/logos/splash_logos/
     - assets/icons/
     - assets/images/on_boarding_images/
 

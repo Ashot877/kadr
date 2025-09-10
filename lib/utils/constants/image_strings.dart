@@ -26,4 +26,11 @@ class TImages {
   static const String onBoardingImageLight1 = 'assets/images/on_boarding_images/Onbording1_light.png';
   static const String onBoardingImageLight2 = 'assets/images/on_boarding_images/Onbording2_light.png';
   static const String onBoardingImageLight3 = 'assets/images/on_boarding_images/Onbording3_light.png';
+
+  //-----------login logo----------------------------
+  static const String darkAppLogo = 'assets/logos/log_logos/dark_log.png';
+  static const String lightAppLogo = 'assets/logos/log_logos/light_log.png';
+
+  static const String googleDark = 'assets/logos/googleDark.png';
+  static const String googleLight = 'assets/logos/googleLight.png';
 }

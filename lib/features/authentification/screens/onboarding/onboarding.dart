@@ -3,6 +3,10 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:kadr/features/authentification/controllers_onboardin/onboarding_controller.dart';
+import 'package:kadr/features/authentification/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:kadr/features/authentification/screens/onboarding/widgets/onboarding_next_button.dart';
+import 'package:kadr/features/authentification/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:kadr/features/authentification/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:kadr/utils/constants/colors.dart';
 import 'package:kadr/utils/constants/image_strings.dart';
 import 'package:kadr/utils/constants/sizes.dart';
@@ -10,11 +14,6 @@ import 'package:kadr/utils/helpers/helpers.dart';
 import 'package:kadr/utils/constants/text_strings.dart';
 import 'package:kadr/utils/device/device_utility.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
-import '../widgets/onboarding_dot_navigation.dart';
-import '../widgets/onboarding_next_button.dart';
-import '../widgets/onboarding_page.dart';
-import '../widgets/onboarding_skip.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
