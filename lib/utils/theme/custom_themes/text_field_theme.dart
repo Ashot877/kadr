@@ -5,13 +5,20 @@ class TTextFormFieldTheme{
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey,
+    prefixIconColor: Colors.black54,
     suffixIconColor: Colors.grey,
+    fillColor: Colors.white,
     // constraints: const BoxConstraints.expand(height: 14.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    labelStyle: TextStyle(
+      color: Colors.black54,
+      fontSize: 14,
+    ),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
     errorStyle: const TextStyle().copyWith(fontStyle:  FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: Colors.black.withValues(alpha: 0.4)),
+    floatingLabelStyle: TextStyle(
+      color: Colors.black,
+      fontSize: 14,
+    ),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
       borderSide: const BorderSide(width: 1, color: Colors.grey),
@@ -22,7 +29,7 @@ class TTextFormFieldTheme{
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.black12),
+      borderSide: const BorderSide(width: 1, color: Colors.black),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
@@ -34,15 +41,22 @@ class TTextFormFieldTheme{
     ),
   );
 
-  static InputDecorationTheme darkINputDecorationTheme = InputDecorationTheme(
+  static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey,
+    prefixIconColor: Colors.white70,
     suffixIconColor: Colors.grey,
+    fillColor: Colors.black,
     // constraints: const BoxConstraints.expand(height: 14.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
+    labelStyle: TextStyle(
+      color: Colors.white70,
+      fontSize: 14,
+    ),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
     errorStyle: const TextStyle().copyWith(fontStyle:  FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: Colors.black.withValues(alpha: 0.4)),
+    floatingLabelStyle: TextStyle(
+      color: Colors.white,
+      fontSize: 14,
+    ),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
       borderSide: const BorderSide(width: 1, color: Colors.grey),

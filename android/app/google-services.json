@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "283060311688",
+    "project_id": "kadr-ea29d",
+    "storage_bucket": "kadr-ea29d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283060311688:android:1e166bc769d600fa5cf13d",
+        "android_client_info": {
+          "package_name": "com.example.kadr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283060311688-epv10fjaocfiu2k27g0is4077tuu6drb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kadr",
+            "certificate_hash": "6578e5c125d65038cc518741da7dc7174781b1ea"
+          }
+        },
+        {
+          "client_id": "283060311688-1b659omu76ap8rfjf2mubkb5rjmn2o5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnaDYsvKNA8uZakV6KSTgjwPyLtP_YpyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283060311688-1b659omu76ap8rfjf2mubkb5rjmn2o5e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "283060311688-l5tr6ki3vn4harlb39mhl0gecr91jl7u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kadr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

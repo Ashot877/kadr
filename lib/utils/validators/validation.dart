@@ -1,17 +1,51 @@
 class TValidator {
   TValidator._();
 
-  // ------------------- Проверка Email -------------------
-  static bool isValidEmail(String email) {
-    final RegExp emailRegExp = RegExp(
-      r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
-    );
-    return emailRegExp.hasMatch(email);
+
+  static String? validateEmail(String? value)
+  {
+    if (value == null || value.isEmpty) {
+      return 'Email is required.';
+    }
+
+    final emailReg = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+
+    if (!emailReg.hasMatch(value)) {
+      return 'Invalid email address.';
+    }
+    return null;
   }
 
-  // ------------------- Проверка пароля -------------------
-  static bool isValidPassword(String password, {int minLength = 6}) {
-    return password.length >= minLength;
+  static String? validatePassword(String? value)
+  {
+    if (value == null || value.isEmpty) {
+      return 'Password is required.';
+    }
+
+    if (value.length < 6) {
+      return 'Password must be at least 6 characters long.';
+    }
+
+    if (!value.contains(RegExp(r'[A-Z]'))) {
+      return 'Password must contain at least one uppercase letter.';
+    }
+
+    if (!value.contains(RegExp(r'[0-9]'))) {
+      return 'Password must contain at least one number.';
+    }
+
+    if (!value.contains(RegExp(r'[!@#$%^&*(),.?":{}<>]'))) {
+      return 'Password must contain at least one special character.';
+    }
+
+    return null;
+  }
+
+  static String? validateEmptyText(String? fieldName, String? value) {
+    if (value == null || value.isEmpty) {
+      return '$fieldName is required.';
+    }
+    return null;
   }
 
   // ------------------- Проверка телефона Армении -------------------
@@ -20,14 +54,18 @@ class TValidator {
     return phoneRegExp.hasMatch(phone.replaceAll(RegExp(r'[\s\-()]'), ''));
   }
 
-  // ------------------- Проверка на пустую строку -------------------
-  static bool isNotEmpty(String value) {
-    return value.trim().isNotEmpty;
-  }
+  static String? validatePhoneNumber(String? value)
+  {
+    if (value == null || value.isEmpty) {
+      return 'Phone number is required.';
+    }
 
-  // ------------------- Проверка длины текста -------------------
-  static bool hasMinLength(String value, int minLength) {
-    return value.trim().length >= minLength;
+    final phoneReg = RegExp(r'^(?:\+374|0)([0-9]{8})$');
+
+    if (!phoneReg.hasMatch(value)) {
+      return 'Invalid phone number format (+374...).';
+    }
+    return null;
   }
 
   static bool hasMaxLength(String value, int maxLength) {

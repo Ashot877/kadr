@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kadr/utils/constants/colors.dart'; // TColor
 
 class TCheckBox {
   TCheckBox._();
@@ -10,17 +11,18 @@ class TCheckBox {
         if (states.contains(WidgetState.selected)) {
           return Colors.white;
         }
-        return Colors.yellow;
+        return Colors.transparent;
       },
     ),
     fillColor: WidgetStateProperty.resolveWith<Color?>(
           (states) {
         if (states.contains(WidgetState.selected)) {
-          return Colors.yellow;
+          return TColor.lightGreyText;
         }
-        return Colors.grey;
+        return Colors.transparent;
       },
     ),
+    side: BorderSide(color: TColor.lightGreyText), // просто фиксированная рамка
   );
 
   static final darkCheckBoxTheme = CheckboxThemeData(
@@ -28,18 +30,19 @@ class TCheckBox {
     checkColor: WidgetStateProperty.resolveWith<Color?>(
           (states) {
         if (states.contains(WidgetState.selected)) {
-          return Colors.white;
+          return Colors.black;
         }
-        return Colors.yellow;
+        return Colors.transparent;
       },
     ),
     fillColor: WidgetStateProperty.resolveWith<Color?>(
           (states) {
         if (states.contains(WidgetState.selected)) {
-          return Colors.yellow;
+          return TColor.darkGreyText;
         }
-        return Colors.grey;
+        return Colors.transparent;
       },
     ),
+    side: BorderSide(color: TColor.darkGreyText), // фиксированная рамка
   );
 }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
+///import 'package:iconsax/iconsax.dart';
 import 'package:kadr/common/styles/spacing_styles.dart';
 import 'package:kadr/features/authentification/screens/login/widgets/login_form.dart';
 import 'package:kadr/features/authentification/screens/login/widgets/login_header.dart';
-import 'package:kadr/utils/constants/colors.dart';
-import 'package:kadr/utils/constants/image_strings.dart';
+///import 'package:kadr/utils/constants/colors.dart';
+///import 'package:kadr/utils/constants/image_strings.dart';
 import 'package:kadr/utils/constants/text_strings.dart';
 import 'package:kadr/utils/helpers/helpers.dart';
 
@@ -28,13 +28,14 @@ class LoginScreen extends StatelessWidget {
             children: [
               /// logo, title & sub-title
               TLoginHeader(dark: dark),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               /// form
               TLoginForm(),
 
               /// Divider
               TFormDivider(dividerText: TTexts.orSignInWith.capitalize!),
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: TSizes.spaceBtwSections - 10),
 
               /// Footer
               TSocialButtons(dark: dark),

@@ -1,23 +1,26 @@
 class TImages {
   TImages._();
 
+  static const String loading = 'assets/images/Loading.json';
+
   //----------------Logo-------------------
   static const String logo = 'assets/logos/logo.svg';
 
-  //----------------Images------------------
-  static const String theWeekMovie = 'assets/images/The_Week_Movie.png';
+  static const String user = 'assets/images/user.jpg';
+  static const String banner = 'assets/images/banner.jpg';
+  static const String banner2 = 'assets/images/banner.jpg';
+  static const String banner3 = 'assets/images/banner.jpg';
+  static const String bannerTop3 = 'assets/images/bannerTop3.jpg';
 
-  //----------------Icons-------------------
-  static const String home = 'assets/icons/home.svg';
-  static const String homeActive = 'assets/icons/home_active.svg';
-  static const String kadr = 'assets/icons/kadr.svg';
-  static const String kadrActive = 'assets/icons/kadr_active.svg';
-  static const String reward = 'assets/icons/rewards.svg';
-  static const String rewardActive = 'assets/icons/rewards_active.svg';
-  static const String profile = 'assets/icons/profile.svg';
-  static const String profileAcitve = 'assets/icons/profile_active.svg';
-  static const String block = 'assets/icons/block.svg';
-  static const String book = 'assets/icons/book.svg';
+  //----------------Images------------------
+  static const String theWeekMovie = 'assets/images/The_Week_Movie1.jpg';
+  static const String theWeekMovie1 = 'assets/images/The_Week_Movie.jpg';
+
+  //----------------Product Images--------------------
+  static const String product1 = 'assets/images/product_images/product_image_1.jpg';
+  static const String product2 = 'assets/images/product_images/product_image_2.jpg';
+  static const String product3 = 'assets/images/product_images/product_image_3.jpg';
+
 
   //-----------OnBoarding Images-----------------
   static const String onBoardingImageDark1 = 'assets/images/on_boarding_images/Onbording1_dark.png';
@@ -28,9 +31,19 @@ class TImages {
   static const String onBoardingImageLight3 = 'assets/images/on_boarding_images/Onbording3_light.png';
 
   //-----------login logo----------------------------
-  static const String darkAppLogo = 'assets/logos/log_logos/dark_log.png';
-  static const String lightAppLogo = 'assets/logos/log_logos/light_log.png';
+  static const String darkAppLogo = 'assets/logos/appbar_logos/logo_two.png';
+  static const String lightAppLogo = 'assets/logos/appbar_logos/logo_two.png';
 
-  static const String googleDark = 'assets/logos/googleDark.png';
-  static const String googleLight = 'assets/logos/googleLight.png';
+  static const String google = 'assets/logos/devicon_google.png';
+
+  static const String verifyMailDark = 'assets/images/mail_verify_images/verify_mail_dark.png';
+  static const String verifyMailLight = 'assets/images/mail_verify_images/verify_mail_light.png';
+  static const String successVerifyDark = 'assets/images/mail_verify_images/success_verify_dark.png';
+  static const String successVerifyLight = 'assets/images/mail_verify_images/success_verify_light.png';
+  static const String resetPasswordDark = 'assets/images/mail_verify_images/reset_dark.png';
+  static const String resetPasswordLight = 'assets/images/mail_verify_images/reset_light.png';
+
+  static const String appBarLogoDark = 'assets/logos/appbar_logos/logo_two.png';
+  static const String appBarLogoLight = 'assets/logos/appbar_logos/logo_two.png';
+
 }
